@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *  main - assigns random number to n 
+ *  main - assigns random number to n
  *  executes and prints
  *  Return: 0 (succes)
  */
