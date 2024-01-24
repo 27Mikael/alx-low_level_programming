@@ -12,29 +12,23 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	/* Check if input parameters are NULL */
 	if (name == NULL || owner == NULL)
 	{
 		return (NULL);
 	}
 
-	/* Declare variables at the beginning */
 	dog_t *new_dog;
 
-	/* Allocate memory */
 	new_dog = (dog_t *)malloc(sizeof(dog_t));
 
-	/* Check if memory was allocated successfully */
 	if (new_dog == NULL)
 	{
 		return (NULL);
 	}
 
-	/* Allocate memory for the name and owner */
 	new_dog->name = strdup(name);
 	new_dog->owner = strdup(owner);
 
-	/* Check if string copying was successful */
 	if (new_dog->name == NULL || new_dog->owner == NULL)
 	{
 		free(new_dog->name);
@@ -43,7 +37,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	/* Set the age */
 	new_dog->age = age;
 
 	return (new_dog);
