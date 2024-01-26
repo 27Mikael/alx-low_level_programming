@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- *op_add - returns the sum of a, b 
+ *op_add - returns the sum of a, b
  *@a: value to add
  *@b: other val to add
  *
@@ -34,29 +34,29 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	return (a*b);
+	return (a * b);
 }
 
 /**
- *op_div - returns the result of a/b
- *@: value to be devided
+ *op_div - returns the result of a / b
+ *@a: value to be divided
  *@b: the divider
  *
- *Return: div(a/b)
+ *Return: div(a / b)
  */
 int op_div(int a, int b)
 {
-	return (a/b);
+	return (a / b);
 }
 
 /**
- *op_mod - returns (a%b)
+ *op_mod - returns (a % b)
  *@a: the val of a
  *@b:the val of b
  *
- *Return: (a%b)
+ *Return: (a % b)
  */
 int op_mod(int a, int b)
 {
-	return (a%b);
+	return (a % b);
 }
