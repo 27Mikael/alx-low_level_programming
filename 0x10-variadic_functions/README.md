@@ -8,4 +8,4 @@ File 3-print_all.c is a function that prints anything.
 
 File variadic_functions.h is the header file that contains all the function prototypes.
 
-random change
+random change adding
