@@ -29,7 +29,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	/*Set Next of the new node to point to the previous Head.*/
-	for (len = 0; str[len];len++)
+	for (len = 0; str[len]; len++)
 		;
 
 	/*Reset Head to point to the new node.*/
