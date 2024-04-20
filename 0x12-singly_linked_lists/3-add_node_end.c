@@ -15,7 +15,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	/*store the head reference in a temp var*/
 	list_t *new_node;
 	list_t *temp = *head;
-	unsigned int len = 0;
 
 	/*create a new node & allocate memory*/
 	new_node = malloc(sizeof(list_t));
@@ -23,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	new_node->str = strdup(str);
-	new_node->len = len;
+	new_node->len = strlen(str);
 	new_node->next = NULL;
 
 	/*set pointer of new node as NULL since it is last*/
