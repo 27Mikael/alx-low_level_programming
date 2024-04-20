@@ -18,24 +18,21 @@ size_t print_list(const list_t *h)
 	printf("[");
 
 	/* Iterate through the list */
-	while (current != NULL)
+	while (current)
 	{
 		/* Print the string of the current node */
-		if (current->str == NULL)
+		if (!current->str)
 		{
-			printf("nil");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-			printf("%s", current->str);
+			printf("[%u] %s\n", current->str);
 		}
 
 		count++;
 		current = current->next;
 	}
-
-	/* Print separators between elements */
-	printf(",");
 
 	return (count);
 }
