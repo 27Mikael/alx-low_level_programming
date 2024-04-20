@@ -23,11 +23,11 @@ size_t print_list(const list_t *h)
 		/* Print the string of the current node */
 		if (!current->str)
 		{
-			printf("[0] (nil)\n");
+			printf("[0] (nil)");
 		}
 		else
 		{
-			printf("[%u] %s\n", current->len, current->str);
+			printf("[%u] %s", current->len, current->str);
 		}
 
 		count++;
